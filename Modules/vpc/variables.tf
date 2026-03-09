@@ -5,7 +5,7 @@ variable "VPC-CIDR" {
 
 variable "public_subnet_cidr" {
     description = "CIDR range of public subnet"
-    type = list(string)
+    type = string
 }
 
 variable "private_subnet_cidr" {
