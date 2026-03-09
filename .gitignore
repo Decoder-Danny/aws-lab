@@ -24,3 +24,6 @@ override.tf.json
 
 # Include plan files
 *tfplan*
+
+#MacOS Finder Garbage Files
+.DS_Store
