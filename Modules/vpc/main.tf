@@ -2,7 +2,7 @@ resource "aws_vpc" "this" {
   cidr_block           = var.VPC-CIDR
   enable_dns_support   = true
   enable_dns_hostnames = true
-  tags = { Name = "CUI Enclave" }
+  tags = { Name = "Enclave" }
 }
 
 resource "aws_internet_gateway" "this" {
