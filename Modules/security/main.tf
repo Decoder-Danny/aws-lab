@@ -8,6 +8,16 @@ resource "aws_security_group" "web-sg" {
     }
 }
 
+resource "aws_security_group" "alb_sg" {
+    name = "application-load-balancer-sg"
+    description = "security group for load balancer"
+    vpc_id = var.vpc_id
+
+    tags = {
+        Name = "Load Balancer SG"
+    }
+}
+
 # 2. Add an Inbound Rule for HTTP (Port 80)
 resource "aws_vpc_security_group_ingress_rule" "allow_http" {
   security_group_id = aws_security_group.web-sg.id
