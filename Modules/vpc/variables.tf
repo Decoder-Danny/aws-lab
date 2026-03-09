@@ -12,3 +12,4 @@ variable "private_subnet_cidr" {
     description = "CIDR range of private subnet"
     type = string
 }
+
